@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        &__heading {
+            width: auto;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__content {
+            align-items: center;
+            text-align: center;
+            padding-top: 238px;
+        }
+
+        &__text {
+            width: auto;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    .menu-game {
+        padding-top: 0;
+
+        &__img {
+            width: 343px;
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 450px);
+        padding-right: calc(50% - 450px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: calc(50% - 300px);
+        padding-right: calc(50% - 300px);
+    }
+
+    .top {
+        &__heading {
+            width: auto;
+        }
+
+        &__content {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

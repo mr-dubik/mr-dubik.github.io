@@ -1,0 +1,85 @@
+.select {
+    position: relative;
+    width: 288px;
+    height: 20px;
+}
+
+.select select {
+    display: block;
+    width: 100%;
+    height: 41px;
+    padding-left: 14px;
+    padding-right: 22px;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    border-radius: 20px;
+}
+
+.select:after {
+    content: "";
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: 6px;
+    background-image: url(./img/Select.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 11px;
+}
+
+.top_title {
+    margin-top: 127px;
+}
+
+.catalog_nav {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bread_crumds_link {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 32px;
+    color: #000000;
+
+    &:hover span {
+        text-decoration: underline;
+    }
+}
+
+.bread_crumds_link:not(:last-child):after {
+    content: "/";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+.top_content_catalog {
+    background-image: url(./img/catalog_topback.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

@@ -1,0 +1,34 @@
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .center {
+        padding-left: calc(50% - 455px);
+        padding-right: calc(50% - 455px);
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+    .history {
+        justify-content: center;
+    }
+
+    .menu__dishs {
+        justify-content: center;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__photos {
+            max-width: 600px;
+            justify-content: center;
+        }
+    }
+
+    .cooks__photos {
+        justify-content: center;
+        gap: 30px;
+    }
+}

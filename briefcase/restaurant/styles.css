@@ -1,0 +1,728 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.center {
+  padding-left: calc(50% - 555px);
+  padding-right: calc(50% - 555px);
+}
+
+h6 {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+}
+
+h4 {
+  padding-top: 204px;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+  color: #D67E35;
+}
+
+h3 {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 60px;
+  color: #D67E34;
+}
+
+h2 {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+}
+
+h1 {
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 92px;
+  color: #D67E35;
+  padding-bottom: 12px;
+}
+
+.header {
+  background: url(./img/background-header.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__logo {
+  transition: all 0.3s linear;
+}
+.header__line {
+  border: 1px solid #FFFFFF;
+  height: 51px;
+  margin-right: 34px;
+}
+.header-line {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #ffffff;
+  align-content: flex-start;
+}
+.header__nav-links {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  padding-top: 18px;
+}
+.header__nav-links-main {
+  padding-right: 23px;
+}
+.header__nav-links-menu {
+  padding-right: 20px;
+}
+.header__nav-links-info {
+  padding-right: 25px;
+}
+.header__nav-links-booking {
+  padding-right: 36px;
+}
+.header__nav-cart {
+  padding-top: 18px;
+  padding-right: 21px;
+  transition: all 0.3s linear;
+}
+.header__phone {
+  width: 159px;
+  padding-right: 45px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.header__phone-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+.header__phone-number {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+.header__phone-logo {
+  padding-right: 5px;
+  transition: all 0.3s linear;
+}
+.header__title {
+  width: 500px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__title-line {
+  border: 1px solid #FFFFFF;
+  width: 61px;
+}
+.header__title-best {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 21px;
+}
+
+.header__title p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.link-hover {
+  transition: all 0.3s linear;
+}
+
+.link-hover:hover {
+  color: rgba(255, 255, 255, 0.6980392157);
+}
+
+.header__logo:hover,
+.header__nav-cart:hover,
+.header__phone-logo:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.btn {
+  background-color: #FF7400;
+  color: #ffffff;
+  width: 157px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  background-color: rgba(255, 115, 0, 0.6784313725);
+}
+
+.burger {
+  display: none;
+}
+
+.cards {
+  font-family: "Tinos";
+  font-style: normal;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 31px;
+  margin-top: -100px;
+  margin-bottom: 150px;
+}
+
+.card {
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  width: 349px;
+  min-height: 328px;
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
+}
+.card__quality_image {
+  padding-bottom: 4px;
+  padding-top: 48px;
+}
+.card__heading {
+  padding-bottom: 20px;
+}
+.card__text {
+  color: #656363;
+  padding: 0px 20px 20px 20px;
+}
+.card__text_orange {
+  color: #BC9060;
+}
+
+.history__our-story span {
+  color: #D67E34;
+}
+
+.history {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 122px;
+}
+.history__our-story {
+  width: 444px;
+  text-align: center;
+}
+.history__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #656363;
+  padding-bottom: 80px;
+}
+.history__nambers {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  text-align: center;
+  color: #BC9060;
+}
+.history__item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.history__img {
+  width: 539px;
+  height: 498px;
+}
+.history__statistics {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+}
+.history__title {
+  padding-top: 16px;
+  padding-bottom: 21px;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+}
+
+.black__block {
+  background-image: url(./img/black-bg.jpg);
+  height: 357px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 138px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.black__block-desc {
+  width: 610px;
+}
+.black__block_button {
+  margin-right: 21px;
+}
+
+.black__block p {
+  padding-top: 21px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+
+.our__dishes span {
+  color: #D67E34;
+}
+
+.our__dishes-content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 144px;
+}
+.our__dishes-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+}
+.our__dishes-items {
+  max-width: 654px;
+  display: flex;
+  gap: 29px;
+  flex-direction: column;
+}
+
+.pizza-img {
+  margin-top: -4px;
+}
+
+.our__dishes h2 {
+  text-align: center;
+  padding-bottom: 140px;
+}
+
+.our__dishes-item span {
+  content: " 5354  ";
+  width: 200px;
+  margin: 20px 0;
+  padding: 0;
+  height: 0;
+  border: none;
+  border: 1px dashed #000000;
+  transform: rotate(90deg);
+}
+
+.stipple {
+  width: 110px;
+  margin: 20px 0;
+  padding: 0;
+  height: 0;
+  border: none;
+  border: 1px dashed #000000;
+}
+
+.menu {
+  background-image: url(./img/bar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu__title {
+  font-family: "Tinos";
+  font-style: normal;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 138px;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 62px;
+  color: #FFFFFF;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+}
+.menu__dishs {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-bottom: 226px;
+}
+.menu__dish {
+  width: 350px;
+  background: #FFFFFF;
+  padding-top: 80px;
+  padding-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu__dish-gamburger {
+  background-image: url(./img/gamburger.jpg);
+  background-repeat: no-repeat;
+  width: 225px;
+  height: 225px;
+  margin-bottom: 26px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.menu__dish-gamburger_wrap {
+  box-sizing: border-box;
+  background: #D67E34;
+  border: 7px solid #FFFFFF;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__dish-gamburger-price {
+  font-family: "Cookie";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 33px;
+  color: #FFFFFF;
+}
+.menu__dish-desk {
+  padding-top: 17px;
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+.menu__dish_bottom {
+  margin-bottom: 29px;
+}
+
+.feedback {
+  background: #E6E5E5;
+  text-align: center;
+}
+.feedback__text {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  padding-top: 104px;
+  padding-bottom: 21px;
+}
+.feedback__visitor {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+.feedback__visitor-name {
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  padding-bottom: 139px;
+}
+.feedback__point {
+  width: 5px;
+  height: 5px;
+  background: #C4C4C4;
+}
+.feedback__point-active {
+  width: 7px;
+  height: 7px;
+  border: 1px solid #FF7400;
+}
+
+.gallery span {
+  color: #D67E34;
+}
+
+.gallery h2 {
+  padding-top: 101px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.gallery {
+  padding-bottom: 100px;
+}
+.gallery__photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cooks span {
+  color: #D67E34;
+}
+
+.cooks h2 {
+  padding-bottom: 107px;
+  text-align: center;
+}
+
+.cooks__photos {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__back {
+  background-image: url(./img/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 732px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .center {
+    padding-left: calc(50% - 455px);
+    padding-right: calc(50% - 455px);
+  }
+  .cards {
+    justify-content: center;
+  }
+  .history {
+    justify-content: center;
+  }
+  .menu__dishs {
+    justify-content: center;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery__photos {
+    max-width: 600px;
+    justify-content: center;
+  }
+  .cooks__photos {
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__title {
+    width: auto;
+  }
+  .center {
+    padding-left: calc(50% - 355px);
+    padding-right: calc(50% - 355px);
+  }
+  .cards {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .history {
+    justify-content: center;
+  }
+  .history__our-story {
+    padding-bottom: 50px;
+  }
+  .header-line {
+    align-items: center;
+  }
+  .header__nav {
+    display: none;
+  }
+  .black__block {
+    justify-content: center;
+    flex-direction: column;
+  }
+  .black__block p {
+    margin-bottom: 50px;
+  }
+  .menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .menu__dishs {
+    justify-content: center;
+  }
+  .gallery__photos {
+    justify-content: center;
+  }
+  .cooks__photos {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header-line {
+    align-items: center;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__logo_img {
+    width: 44px;
+    height: 31px;
+  }
+  .header-line {
+    align-items: flex-start;
+  }
+  .burger {
+    display: block;
+  }
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .burger__slide {
+    display: none;
+  }
+  .block {
+    display: block;
+  }
+  .cards {
+    justify-content: center;
+  }
+  .history__title {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+  .header__title {
+    width: auto;
+  }
+  .header__title h4 {
+    font-size: 30px;
+  }
+  .header__title h1 {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .history {
+    justify-content: center;
+  }
+  .history__img {
+    width: 290px;
+    height: 257px;
+  }
+  .history__statistics {
+    padding-bottom: 50px;
+  }
+  .black__block {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .black__block-desc {
+    width: auto;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .black__block-desc h3 {
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .our__dishes h2 {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+  .our__dishes-item {
+    flex-direction: column;
+  }
+  .our__dishes-content {
+    justify-content: center;
+  }
+  .stipple {
+    display: none;
+  }
+  .gallery h2 {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+  .gallery__photos {
+    justify-content: center;
+  }
+  .gallery__photo_one {
+    width: 253px;
+    height: 274px;
+  }
+  .gallery__photo_six {
+    width: 253px;
+    height: 274px;
+  }
+  .pizza-img {
+    width: 320px;
+    height: 478px;
+  }
+  .cooks__photos {
+    justify-content: center;
+  }
+  .cooks__photos img {
+    max-width: 300px;
+  }
+  .menu__dishs {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=styles.css.map */

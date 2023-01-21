@@ -1,0 +1,68 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .header__title {
+        width: auto;
+    }
+
+    .center {
+        padding-left: calc(50% - 355px);
+        padding-right: calc(50% - 355px);
+    }
+
+
+    .cards {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .history {
+        justify-content: center;
+
+        &__our-story {
+            padding-bottom: 50px;
+        }
+    }
+
+    .header {
+
+        &-line {
+            align-items: center;
+        }
+
+        &__nav {
+            display: none;
+        }
+    }
+
+    .black__block {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .black__block p {
+        margin-bottom: 50px;
+    }
+
+    .menu {
+        padding-left: 0;
+        padding-right: 0;
+
+        &__dishs {
+            justify-content: center;
+        }
+    }
+
+    .gallery__photos {
+        justify-content: center;
+    }
+
+    .cooks__photos {
+        justify-content: center;
+        gap: 10px;
+    }
+}
