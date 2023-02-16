@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const questions = [
+        {
+          text: "1. Что, как уверяет пословица, должна покинуть баба, чтобы облегчить жизнь лошади?",
+          variants: {
+            a: "Воз",
+            b: "Ипподром",
+            c: "Корабль",
+            d: "Зону комфорта",
+          },
+          correctAnswerindex: "a",
+        },
+        {
+          text: "2. Что, как уверяет пословица, должна покинуть баба, чтобы облегчить жизнь лошади?",
+          variants: {
+            a: "Кадило",
+            b: "Светило",
+            c: "Ветрило",
+            d: "Правило",
+          },
+          correctAnswerindex: "d",
+        },
+        {
+          text: "3. Кто часто сопровождает Деда Мороза, поздравляющего малышей?",
+          variants: {
+            a: "Русалочка",
+            b: "Снегурочка",
+            c: "Овечка",
+            d: "Белочка",
+          },
+          correctAnswerindex: "b",
+        },
+        {
+          text: "4. Кто часто сопровождает Деда Мороза, поздравляющего малышей?",
+          variants: {
+            a: "Оливье",
+            b: "Мандарин",
+            c: "Серпантин",
+            d: "Снеговик",
+          },
+          correctAnswerindex: "b",
+        },
+        {
+          text: "5. Что в популярной игре «Твистер» нужно переставлять на игровом поле",
+          variants: {
+            a: "Фишки",
+            b: "Мячи",
+            c: "Яблоки",
+            d: "Руки и ноги",
+          },
+          correctAnswerindex: "d",
+        },
+      ];
+
+      const game = {
+        questions,
+        scoreCount: 0,
+        questionIndex: 0,
+
+        init() {
+          this.scoreCount = 0;
+          this.questionIndex = 0;
+        },
+
+        run() {
+          this.init();
+          alert('Добро пожаловать в игру "Кто хочет стать миллионером".');
+
+          while (true) {
+            const answer = this.getAnswer();
+
+            if (this.userWanExit(answer)) {
+              alert("До свидания");
+              break;
+            }
+
+            if (this.isAnswerCorrect(answer)) {
+              alert("Это правильный ответ");
+              this.scoreCount++;
+            } else {
+              alert("К сожалению, это не верный ответ");
+            }
+
+            this.questionIndex++;
+
+            if (this.isGameOver()) {
+              alert(`Ваш счет: ${this.scoreCount}.`);
+
+              if (!confirm("Хотите сыграть еще одну игру?")) {
+                break;
+              }
+
+              this.init();
+            }
+          }
+        },
+
+        getAnswer() {
+          while (true) {
+            let answer = prompt(this.getcurrentQuestionString());
+
+            if (answer === null) {
+              alert('Если вы хотите выйти из игры, наберите "exit".');
+              continue;
+            }
+
+            answer = answer.trim().toLowerCase();
+
+            if (!this.validateAnswer(answer)) {
+              alert("Необходимо выбрать один из предложенных вариантов ответа");
+              continue;
+            }
+
+            return answer;
+          }
+        },
+
+        getcurrentQuestionString() {
+          const question = this.questions[this.questionIndex];
+
+          let questionString = `Вопрос: ${question.text} \n\nВарианты ответов:\n`;
+          for (const key in question.variants) {
+            if (question.variants.hasOwnProperty(key)) {
+              questionString += `${key} - ${question.variants[key]}\n`;
+            }
+          }
+
+          return questionString;
+        },
+
+        validateAnswer(userAnswer) {
+          return ["exit", "a", "b", "c", "d"].indexOf(userAnswer) !== -1;
+        },
+
+        userWanExit(userAnswer) {
+          return userAnswer === "exit";
+        },
+
+        isAnswerCorrect(userAnswer) {
+          return (
+            this.questions[this.questionIndex].correctAnswerindex === userAnswer
+          );
+        },
+
+        isGameOver() {
+          return this.questionIndex > 4;
+        },
+      };
+
+      game.run();
+    </script>
+  </body>
+</html>
