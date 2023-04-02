@@ -85,60 +85,26 @@
   background-size: cover;
   background-position: center;
 }
-
-@-webkit-keyframes heartbeat {
-  from {
-    transform: scale(1);
-    transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  10% {
-    transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  17% {
-    transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  33% {
-    transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-  45% {
-    transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-}
 @keyframes heartbeat {
   from {
     transform: scale(1);
     transform-origin: center center;
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   10% {
     transform: scale(0.91);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   17% {
     transform: scale(0.98);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   33% {
     transform: scale(0.87);
-    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   45% {
     transform: scale(1);
-    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 }
@@ -171,7 +137,6 @@
   display: flex;
   align-items: center;
   text-align: center;
-  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #000000;
   border: none;
@@ -268,8 +233,7 @@
   line-height: 20px;
   cursor: pointer;
   transition: all 0.6s;
-  -webkit-animation: heartbeat 2.5s ease-in-out 10s infinite both;
-          animation: heartbeat 2.5s ease-in-out 10s infinite both;
+  animation: heartbeat 2.5s ease-in-out 10s infinite both;
 }
 .cart_form_btn:hover {
   color: white;
@@ -356,7 +320,6 @@ a {
   font-size: 16px;
   line-height: 24px;
   font-style: normal;
-  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #ffffff;
   font-weight: 400;
@@ -441,9 +404,6 @@ a {
   box-sizing: border-box;
 }
 .header_input::-moz-placeholder {
-  color: #ffffff;
-}
-.header_input:-ms-input-placeholder {
   color: #ffffff;
 }
 .header_input::placeholder {
@@ -559,7 +519,6 @@ a {
   color: #050505;
 }
 .product_price_sale {
-  -webkit-text-decoration-line: line-through;
   text-decoration-line: line-through;
   color: #888;
 }
@@ -574,7 +533,6 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #000000;
 }
@@ -677,9 +635,6 @@ a {
   outline: none;
 }
 .form_email::-moz-placeholder {
-  color: #c4c4c4;
-}
-.form_email:-ms-input-placeholder {
   color: #c4c4c4;
 }
 .form_email::placeholder {
