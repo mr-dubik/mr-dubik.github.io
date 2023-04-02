@@ -12,24 +12,11 @@ a {
 }
 
 .top__content p span {
-  -webkit-animation: animate 5s linear infinite;
-          animation: animate 5s linear infinite;
+  animation: animate 5s linear infinite;
 }
 
 .top__content p span:nth-child(even) {
-  -webkit-animation-delay: 7.3s;
-          animation-delay: 7.3s;
-}
-
-@-webkit-keyframes animate {
-  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
-    color: #0e3742;
-    text-shadow: none;
-  }
-  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
-    color: #fff;
-    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4, 0 0 400px #03bcf4;
-  }
+  animation-delay: 7.3s;
 }
 
 @keyframes animate {
@@ -148,17 +135,7 @@ body {
 
 .outer:hover {
   background: linear-gradient(#78fff2, #2aa8fc, #003cff);
-  -webkit-animation: rotate 1.5s linear infinite;
-          animation: rotate 1.5s linear infinite;
-}
-
-@-webkit-keyframes rotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
+  animation: rotate 1.5s linear infinite;
 }
 
 @keyframes rotate {

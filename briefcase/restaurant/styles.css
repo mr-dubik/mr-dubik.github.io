@@ -718,9 +718,11 @@ h1 {
   }
   .cooks__photos {
     justify-content: center;
+    gap: 10px;
   }
   .cooks__photos img {
     max-width: 300px;
+    gap: 10px;
   }
   .menu__dishs {
     justify-content: center;
